@@ -2,7 +2,11 @@
 
 ## delivery
 
+![delivery](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/Delivery.png)
+
 ## driver
+
+![driver](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/driver.png)
 
 ## driver_rating
 
