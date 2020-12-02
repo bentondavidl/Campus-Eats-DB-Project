@@ -44,4 +44,6 @@ Screenshots of the data can be found here [Data Screenshots](https://github.com/
 
 ## MySQL dump
 
+The current dump of the database is located in the [DB Dump](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/db%20code/DB%20Dumb%2012012020.sql) file.
+
 ## PPT Video
