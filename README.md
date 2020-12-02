@@ -33,7 +33,8 @@ This project defines a database for managing a food ordering and delivery system
 
 ![EERD For Campus Eats Database](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/CampusEats_EERD.png)
 
-The full data dictionary is available in [DB Data Dictionary.md](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/DB%20Data%20Dictionary.md)
+The full data dictionary is available in [DB Data Dictionary.md](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/DB%20Data%20Dictionary.md)  
+Screenshots of the data can be found here [Data Screenshots](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/Data%20Screenshots.md)
 
 ## MySQL Queries
 
