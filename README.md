@@ -1,6 +1,6 @@
 # Campus-Eats-DB-Project <!-- omit in toc -->
 
-Final project for ITCS 3160 at UNCC for David Benton, Andrew Quinn, Chris Donohue, Matthew Lewis, Hari Dhimal based on the CampusEats system
+Final project for ITCS 3160 at UNCC for David Benton, Andrew Quinn, Chris Donohue, Matthew Lewis, Hari Dhimal based on the Campus Eats system
 
 ## Table of Contents <!-- omit in toc -->
 
