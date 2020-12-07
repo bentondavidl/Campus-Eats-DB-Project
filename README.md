@@ -36,7 +36,7 @@ This project defines a database for managing a food ordering and delivery system
 The full data dictionary is available in [DB Data Dictionary.md](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/DB%20Data%20Dictionary.md)  
 Screenshots of the data can be found here [Data Screenshots](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/Data%20Screenshots.md)
 
-## EERD Narrative:
+### EERD Narrative:
 This database is based on the relationships between each entity in the CampusEats system, specifically the relationships between drivers, restaurants, people, and their ratings. Each person may be a member of staff, faculty, or a student. People are allowed to rate both drivers and restaurants. These ratings are then associated with the individual drivers and restaurants. A person is also able to make orders. When a person places an order, it is associated with a particular delivery, as well as a driver, a location, and the restaurant that will prepare the order. This allows the system to identify who will deliver the order, where they will deliver it, who will be preparing it, as well as the delivery number with which it is associated. A vehicle is associated with each delivery as well, which identifies the vehicle that will be driven to deliver the order.
 
 ## MySQL Queries
