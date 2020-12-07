@@ -15,7 +15,7 @@ Final project for ITCS 3160 at UNCC for David Benton, Andrew Quinn, Chris Donohu
 
 ## Introduction
 
-This project defines a database for managing a food ordering and delivery system for a University. This database is based on work by Dhananjay Arora, Akshay Babu, Sumit Kawale, Prashant Madaan for an earlier semester of this class and is being used with permission. As part of this assignment, we are extending the model to include a rating system for the drivers and restaurants. 
+This project defines a database for managing a food ordering and delivery system for a University using a relational database. This database is based on work by Dhananjay Arora, Akshay Babu, Sumit Kawale, Prashant Madaan for an earlier semester of this class and is being used with permission. As part of this assignment, we are extending the model to include a rating system for the drivers and restaurants as well as creating business rules for the system.
 
 ## Use Case for Rating System
 
