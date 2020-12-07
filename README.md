@@ -6,7 +6,9 @@ Final project for ITCS 3160 at UNCC for David Benton, Andrew Quinn, Chris Donohu
 
 - [Introduction](#introduction)
 - [Use Case for Rating System](#use-case-for-rating-system)
+  - [Business Rules](#business-rules)
 - [EERD](#eerd)
+  - [EERD Narrative](#eerd-narrative)
 - [MySQL Queries](#mysql-queries)
 - [Stored Procedures](#stored-procedures)
 - [Web/App Implementation or Description of Future Work](#webapp-implementation-or-description-of-future-work)
@@ -23,11 +25,11 @@ This project defines a database for managing a food ordering and delivery system
 
 ### Business Rules
 
-1)    The project illustrates the rating system of both deliver drivers and the restaurants
-2)    Our rating system captured under whole number (1-5)
-3)    Customers can rate the restaurant and/or driver for each order. 
-4)    Customers can access their own transaction information.
-5)    We will keep track of driver and the restaurant average rating for each month
+1. The project illustrates the rating system of both deliver drivers and the restaurants
+2. Our rating system captured under whole number (1-5)
+3. Customers can rate the restaurant and/or driver for each order. 
+4. Customers can access their own transaction information.
+5. We will keep track of driver and the restaurant average rating for each month
 
 ## EERD
 
@@ -36,12 +38,19 @@ This project defines a database for managing a food ordering and delivery system
 The full data dictionary is available in [DB Data Dictionary.md](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/DB%20Data%20Dictionary.md)  
 Screenshots of the data can be found here [Data Screenshots](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/Data%20Screenshots.md)
 
-### EERD Narrative:
+### EERD Narrative
+
 This database is based on the relationships between each entity in the CampusEats system, specifically the relationships between drivers, restaurants, people, and their ratings. Each person may be a member of staff, faculty, or a student. People are allowed to rate both drivers and restaurants. These ratings are then associated with the individual drivers and restaurants. A person is also able to make orders. When a person places an order, it is associated with a particular delivery, as well as a driver, a location, and the restaurant that will prepare the order. This allows the system to identify who will deliver the order, where they will deliver it, who will be preparing it, as well as the delivery number with which it is associated. A vehicle is associated with each delivery as well, which identifies the vehicle that will be driven to deliver the order.
 
 ## MySQL Queries
 
 ## Stored Procedures
+
+### Driver Rating <!-- omit in toc -->
+
+Our first stored procedure takes a driver ID as input and calculates their average rating based on the number of stars they have received. Below is an example with a driver_id of 1:
+
+![Driver Rating Example](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/stored_driver_rating.png)
 
 ## Web/App Implementation or Description of Future Work
 
