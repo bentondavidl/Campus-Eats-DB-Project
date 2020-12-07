@@ -50,7 +50,7 @@ This database is based on the relationships between each entity in the CampusEat
 
 Our first stored procedure takes a driver ID as input and calculates their average rating based on the number of stars they have received. Below is an example with a driver_id of 1:
 
-![Driver Rating Example](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/stored_driver_rating.png)
+![Driver Rating Example](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/stored_driver_rating.png)
 
 ## Web/App Implementation or Description of Future Work
 
