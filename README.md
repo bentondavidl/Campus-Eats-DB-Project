@@ -52,17 +52,17 @@ To find the order history, we access data from many tables. This allows us to sh
 
 When looking to optimize this query, we utilized the `EXPLAIN` command in MySQL. This allowed us to look at the execution plan for the query and enables us to find areas that could be sped up by creating a new index.
 
-![EXPLAIN for Order History](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/explain_order_history.png)
+![EXPLAIN for Order History](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/explain_order_history.png#order_history-view)
 
 In this case, there was not any performance to be gained by adding a new index as this query rellied on the indexes we had already created for the primary and foreign keys of our database. If we had decided to sort the view by a value other than the `person_id`, it may have been beneficial.
 
 ### Delivery History <!-- omit in toc -->
 
-Much like the order history, the delivery history view required accessing many tables. We wanted to show the order id, the car they drove to deliver the meal, when they delivered it, the restaurant they delivered from, the total cost of the delivery, adn the rating they received for it. This allows drivers to see the work that they have done for this company. It can also help driver track their improvement, estimate their earnings, and understand what the most profitable restaurant to drive for is. A portion of the output for the view can be seen in the [Data Screenshots](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/Data%20Screenshots.md) file.
+Much like the order history, the delivery history view required accessing many tables. We wanted to show the order id, the car they drove to deliver the meal, when they delivered it, the restaurant they delivered from, the total cost of the delivery, adn the rating they received for it. This allows drivers to see the work that they have done for this company. It can also help driver track their improvement, estimate their earnings, and understand what the most profitable restaurant to drive for is. A portion of the output for the view can be seen in the [Data Screenshots](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/Data%20Screenshots.md#deliver_history-view) file.
 
 As with the first view, we looked to optimize this query. Instead of using the `EXPLAIN` command, we utilized the execution analysis tools that are built into MySQL Workbench. This allowed us to easily go between the results and the execution order to understand the choices the program was making.
 
-![EXPLAIN for Order History](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/explain_delivery_history.png)
+![EXPLAIN for Delivery History](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/explain_delivery_history.png)
 
 Again, since we were utilizing primary and foreign key columns to do the joining and sorting, we had already created indexes at the suggestion of MySQL Workbench. Since every step of the execution plan had an index associated with it, adding another index would have been detrimental.
 

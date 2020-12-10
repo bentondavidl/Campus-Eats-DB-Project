@@ -47,3 +47,11 @@
 ## vehicle
 
 ![vehicle](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/vehicle.PNG)
+
+## order_history view
+
+![order_history](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/view_order_history.png)
+
+## deliver_history view
+
+![delivery_history](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/images/view_delivery_history.png)
