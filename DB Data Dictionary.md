@@ -1,11 +1,23 @@
-# Data Dictionary
+# Data Dictionary <!-- omit in toc -->
 
-## Tables
-[delivery](#table:-delivery), [driver](#table:-driver), [faculty](#table:-faculty), [location](#table:-location), [order](#table:-order), [person](#table:-person), [restaurant](#table:-restaurant), [staff](#table:-staff), [student](#table:-student), [vehicle](#table:-vehicle), [driver_rating](#table:-driver_rating), [restaurant_rating](#table:-restaurant_rating)
+## Tables <!-- omit in toc -->
+
+- [Table: `delivery`](#table-delivery)
+- [Table: `driver`](#table-driver)
+- [Table: `driver_rating`](#table-driver_rating)
+- [Table: `faculty`](#table-faculty)
+- [Table: `location`](#table-location)
+- [Table: `order`](#table-order)
+- [Table: `person`](#table-person)
+- [Table: `restaurant`](#table-restaurant)
+- [Table: `restaurant_rating`](#table-restaurant_rating)
+- [Table: `staff`](#table-staff)
+- [Table: `student`](#table-student)
+- [Table: `vehicle`](#table-vehicle)
 
 ## Table: `delivery`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -14,7 +26,7 @@
 | `vehicle_id` | INT | Not null |   |  **foreign key** to column `vehicle_id` on table `vehicle`. |
 | `delivery_time` | DATETIME |  | `NULL` |   |
   
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -24,7 +36,7 @@
 
 ## Table: `driver`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -34,7 +46,7 @@
 | `date_hired` | DATE |  | `NULL` |   |
 | `rating` | FLOAT |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -43,7 +55,7 @@
 
 ## Table: `driver_rating`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -52,16 +64,17 @@
 | `driver_id` | INT |  | `NULL` |  **foreign key** to column `driver_id` on table `driver`. |
 | `stars` | INT |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
 | PRIMARY | `rating_id` | PRIMARY |   |
 | fk_driver_driver_id_idx | `driver_id` | INDEX |   |
 | fk_person_person_id_idx | `person_id` | INDEX |   |
+
 ## Table: `faculty`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -71,7 +84,7 @@
 | `degree_college` | VARCHAR(75) |  | `NULL` |   |
 | `highest_degree` | VARCHAR(75) |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -80,7 +93,7 @@
 
 ## Table: `location`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -91,7 +104,7 @@
 | `longitude` | VARCHAR(75) |  | `NULL` |   |
 | `drop_off_point` | VARCHAR(75) |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -101,7 +114,7 @@
 
 ## Table: `order`
  
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -114,7 +127,7 @@
 | `total_price` | FLOAT | Not null |   |   |
 | `delivery_charge` | FLOAT |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -127,7 +140,7 @@
 
 ## Table: `person`
  
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -136,7 +149,7 @@
 | `person_email` | VARCHAR(150) |  | `NULL` |   |
 | `cell` | BIGINT |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -144,7 +157,7 @@
 
 ## Table: `restaurant`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -154,7 +167,7 @@
 | `schedule` | VARCHAR(75) |  | `NULL` |   |
 | `website` | VARCHAR(75) |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -162,7 +175,7 @@
 
 ## Table: `restaurant_rating`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -171,7 +184,7 @@
 | `person_id` | INT | `NULL` |   |  **foreign key** to column `person_id` on table `person`. |
 | `stars` | INT |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -180,7 +193,7 @@
 | fk_person_person_id_idx | `person_id` | INDEX |   |
 ## Table: `staff`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -189,7 +202,7 @@
 | `position` | VARCHAR(75) |  | `NULL` |   |
 | `is_admin` | VARCHAR(1) |  | `'N'` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -198,7 +211,7 @@
 
 ## Table: `student`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -208,7 +221,7 @@
 | `major` | VARCHAR(75) |  | `NULL` |   |
 | `type` | VARCHAR(75) |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
@@ -217,7 +230,7 @@
 
 ## Table: `vehicle`
 
-### _Columns_: 
+### _Columns_: <!-- omit in toc -->
 
 | Column | Data type | Attributes | Default | Description |
 | --- | --- | --- | --- | ---  |
@@ -226,7 +239,7 @@
 | `model` | VARCHAR(75) |  | `NULL` |   |
 | `make` | VARCHAR(75) |  | `NULL` |   |
 
-### _Indices_: 
+### _Indices_: <!-- omit in toc -->
 
 | Name | Columns | Type | Description |
 | --- | --- | --- | --- |
