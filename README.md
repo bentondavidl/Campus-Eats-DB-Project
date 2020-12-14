@@ -90,4 +90,6 @@ Above, we have described several use cases for our views and stored procedures. 
 
 The current dump of the database is located in the [DB Dump](https://github.com/bentondavidl/Campus-Eats-DB-Project/blob/main/db%20code/DB%20Dumb%2012102020.sql) file. This file contains the database schema, the create statements, insert statements, and the SQL code for the stored procedures and views.
 
-## PPT Video
+## Video Presentation
+
+[Watch here on Youtube](https://youtu.be/E6mxPVI9ddI)
