@@ -13,7 +13,7 @@ Final project for ITCS 3160 at UNCC for David Benton, Andrew Quinn, Chris Donohu
 - [Stored Procedures](#stored-procedures)
 - [Web/App Implementation or Description of Future Work](#webapp-implementation-or-description-of-future-work)
 - [MySQL dump](#mysql-dump)
-- [PPT Video](#ppt-video)
+- [Video Presentation](#video-presentation)
 
 ## Introduction
 
